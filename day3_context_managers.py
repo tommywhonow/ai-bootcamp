@@ -11,7 +11,7 @@ def timer(name: str) -> Generator[None, None, None]:
         yield
     finally:
         end: float=time.time()
-        print(f"{name} finished in {end - start: 4f} seconds")
+        print(f"{name} finished in {end - start: .4f} seconds")
 
 #context manager - suprress errors
 @contextmanager

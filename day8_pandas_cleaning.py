@@ -20,7 +20,7 @@ df_filled = df.copy()
 df_filled["age"] = df_filled["age"].fillna(df_filled["age"].median())
 df_filled["score"] = df_filled["score"].fillna(df_filled["score"].mean())
 df_filled["name"] = df_filled["name"].fillna("unknown")
-print("\nafter drop_duplicaes:\n", df_filled)
+print("\nafter drop missings:\n", df_filled)
 
 # Remove duplicates
 df_clean = df_filled.drop_duplicates()

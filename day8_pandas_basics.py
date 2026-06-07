@@ -1,5 +1,5 @@
 import pandas as pd
-import numpy as np
+
 
 # Create a dataframe from scratch
 data: dict[str, list[object]] ={

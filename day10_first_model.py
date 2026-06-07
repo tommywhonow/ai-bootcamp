@@ -67,9 +67,12 @@ accuracy = accuracy_score(y_test, y_pred)
 print("\n=== RESULTS ===")
 print(f"accuracy: {accuracy:.4f}")
 print("\nclassification report:")
-print(classification_report(y_test, y_pred, target_names=["not hired", "hired"]))
+print(classification_report(y_test, y_pred, 
+                            target_names=["not hired", "hired"]))
 
 # Confusion matrix plot
+#confusion matrix shows exactlsy WHERE the model makes mistakes
+# not just how many
 cm = confusion_matrix(y_test, y_pred)
 fig, ax = plt.subplots(figsize=(6,5))
 im = ax.imshow(cm, cmap="Blues")

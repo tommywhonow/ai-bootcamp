@@ -23,7 +23,7 @@ def logger(func: F) ->F:
         result = func(*args, **kwargs)
         print(f"{func.__name__} retunred {result}")
         return result
-    return wrapper # type: ignore[return-value]
+    return wrapper # type: ignore[return- value]
 
 # Applyig decorators
 @timer

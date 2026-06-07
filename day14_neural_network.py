@@ -59,7 +59,7 @@ print(f"Architecture: {model}\n")
 
 # TRAINING LOOP
 print("Training...")
-for epoch in range(2000):
+for epoch in range(1000):
     # 1. Zero gradients - alwyas first
     optimizer.zero_grad()
 

@@ -1,6 +1,6 @@
 # default arguments
 def greet(name:str, role:str = "engineer") -> str:
-    return f"hello{name}, you are a {role}"
+    return f"hello {name}, you are a {role}"
 
 #multiple return values
 def get_stats(numbers: list[int]) -> tuple[int, int, int,]:

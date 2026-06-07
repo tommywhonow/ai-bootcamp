@@ -36,7 +36,8 @@ print("saved scatter-hired.png")
 
 # Histogram - income distribution
 fig,ax =plt.subplots(figsize=(8,5))
-ax.hist(df["income"], bins=30, color="steelblue", edgecolor="white", alpha=0.8)
+ax.hist(df["income"], bins=30, color="steelblue", 
+        edgecolor="white", alpha=0.8)
 ax.axvline(df["income"].mean(), color="red", linestyle="--", 
            linewidth=2, label="mean")
 ax.axvline(df["income"].median(), color="green", linestyle="--",

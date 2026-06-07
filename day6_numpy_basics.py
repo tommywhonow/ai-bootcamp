@@ -25,6 +25,6 @@ print("shape:", matrix.shape)
 
 # Indexing
 print("\nfirst row:", matrix[0])
-print("element [1,2]", matrix.shape)
+print("element [1,2]:", matrix[1,2])
 print("first column:", matrix[:,0])
 print("submatrix:\n", matrix[0:2, 1:3])

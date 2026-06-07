@@ -23,7 +23,7 @@ probs = softmax(scores)
 print("softmax: ")
 print("input: ", scores)
 print("output", probs)
-print("sun: ", np.sum(probs)) # sum is 1
+print("sum: ", np.sum(probs)) # sum is 1
 
 # Test relu
 x = np.array([-3.0, -1.0, 0.0, 2.0, 4.0])
